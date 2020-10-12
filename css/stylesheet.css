@@ -29,7 +29,22 @@ header {
   display: grid;
   justify-items: center;
 }
+nav {
+  display: grid;
+
+  width: 100%;
+}
+ul {
+  display: grid;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 70px 70px;
+  background-color: rgb(102, 131, 131);
+}
+
 .titel {
+  display: flex;
   font-size: 30px;
   color: #3da540;
   font-weight: bold;
@@ -46,6 +61,8 @@ header {
   font-family: "Courier New", Courier, monospace;
 }
 .Blogs button {
+  display: flex;
+
   background-color: #3da540; /* Green */
   border: none;
   padding: 15px 32px;
