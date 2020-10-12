@@ -1,5 +1,7 @@
+@import url("style.css");
+@import "font-awesome-sprockets";
+
 body {
-  padding: 5%;
   background-color: rgb(125, 161, 163);
 }
 @media (min-width: 700px) {
