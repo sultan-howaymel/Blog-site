@@ -1,8 +1,12 @@
 @import url("style.css");
+@import url("css1.css");
+
 @import "font-awesome-sprockets";
 
 body {
-  background-color: rgb(125, 161, 163);
+  background-color: #ff414d;
+  display: grid;
+  padding-right: 1%;
 }
 @media (min-width: 700px) {
   body {
@@ -17,18 +21,10 @@ a {
 .container {
   display: grid;
   grid-gap: 50px;
-  background-color: rgb(118, 190, 223);
+  width: auto;
+  background-color: #d9ecf2;
 }
-@media (min-width: 400px) {
-  .section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-header {
-  display: grid;
-  justify-items: center;
-}
+
 nav {
   display: grid;
 
@@ -39,8 +35,11 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%;
   grid-template-columns: 70px 70px;
   background-color: rgb(102, 131, 131);
+  justify-items: end;
+  height: 130%;
 }
 
 .titel {
@@ -54,9 +53,9 @@ ul {
   display: grid;
   text-align: center;
   border-style: solid;
-  margin: 5% 5% 5%;
-  margin-bottom: 0%;
-  background-color: #66dbb4;
+  margin: 5% 5% 10% 5%;
+
+  background-color: #1aa6b7;
   border-color: aqua;
   font-family: "Courier New", Courier, monospace;
 }
@@ -82,6 +81,14 @@ ul {
 
 section {
   display: grid;
+  width: 100%;
+  justify-items: center;
+}
+@media (min-width: 400px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .Blogs h1 {
@@ -106,17 +113,36 @@ footer {
 }
 .SocialSharing {
   display: grid;
-
+  width: 100%;
   text-decoration: none;
-  background-color: rgb(136, 101, 101);
+  background-color: #1aa6b7;
   justify-items: center;
   margin: 5%;
   list-style-type: none;
 }
 .SocialSharing button {
-  border: none;
+  border-style: solid;
+  border-color: green;
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  justify-items: center;
   background-color: rgb(123, 206, 171);
-  color: rgb(112, 99, 190);
-  font-size: 20px;
+  color: rgb(26, 43, 31);
+  font-size: 30px;
   list-style-type: none;
+  width: 100%;
+  background-image: url(/Project-Blog-site/assets/icon/share.jpeg);
+}
+.SocialSharing {
+  display: grid;
+  justify-items: center;
+  grid-gap: 10px;
+}
+@media (max-width: 400px) {
+  .SocialSharing button {
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+  }
 }
